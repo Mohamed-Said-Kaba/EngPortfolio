@@ -1,219 +1,50 @@
-// Contenu : profile. Modifiez les textes entre guillemets ; gardez la structure.
+// Chiffres clés, parcours, compétences et certifications.
 window.SITE = window.SITE || {};
 window.SITE.profile = {
-  "role": {
-    "fr": "Ingénieur d'État en Génie Civil et Structures · BIM & Automatisation",
-    "en": "Civil & Structural Engineer · BIM & Automation"
-  },
-  "tagline": {
-    "fr": "Je dimensionne des structures en béton armé et en charpente métallique, et je développe les outils qui fiabilisent les livrables et font gagner du temps à toute l'équipe.",
-    "en": "I design reinforced concrete and steel structures, and I build the tools that make deliverables more reliable and save the whole team time."
-  },
-  "stats": [
-    {
-      "value": "2",
-      "label": {
-        "fr": "ans chez JESA (OCP / Worley)",
-        "en": "years at JESA (OCP / Worley)"
-      },
-      "icon": "plant"
-    },
-    {
-      "value": "50+",
-      "label": {
-        "fr": "plans d'exécution et notes de calcul suivis",
-        "en": "execution drawings and calculation notes handled"
-      },
-      "icon": "doc"
-    },
-    {
-      "value": "15+",
-      "label": {
-        "fr": "structures étudiées (béton armé et charpente métallique)",
-        "en": "structures designed (reinforced concrete and steel)"
-      },
-      "icon": "building"
-    },
-    {
-      "value": "4",
-      "label": {
-        "fr": "outils et initiatives numériques JESA",
-        "en": "JESA digital tools and initiatives"
-      },
-      "icon": "gear"
-    }
+  "kpis": [
+    { "value": "20+", "label": { "fr": "structures conçues et calculées", "en": "structures designed and calculated" } },
+    { "value": "50+", "label": { "fr": "plans d'exécution et IFC pilotés", "en": "execution and IFC drawings managed" } },
+    { "value": "50+", "label": { "fr": "notes de calcul détaillées", "en": "detailed calculation notes" } },
+    { "value": "5+", "label": { "fr": "outils d'ingénierie développés", "en": "engineering tools developed" } }
   ],
-  "about": {
-    "fr": [
-      "Ingénieur d'État en génie civil de l'École Mohammadia d'Ingénieurs (EMI, Rabat), option Bâtiments, Ponts et Chaussées, je suis basé à Casablanca. Pendant deux ans chez JESA, sur les projets industriels du Groupe OCP, j'ai couvert l'ensemble du cycle : calcul et conception, production et pilotage des livrables, montage des appels d'offres, analyse technique des offres et appui aux équipes de construction.",
-      "Je suis aujourd'hui ingénieur chargé d'études chez Cap Ingénierie International, sur le Médina Royal Mansour à Marrakech, où je suis responsable de deux blocs résidentiels, de l'analyse sismique jusqu'aux plans d'exécution.",
-      "Ce qui me distingue : je ne me contente pas de produire les livrables, j'étudie la façon dont l'équipe travaille et je construis les outils (Dynamo, Python, VBA, API Revit et Robot) qui automatisent le calcul, réduisent les remarques du bureau de contrôle et standardisent les méthodes.",
-      "Mon objectif : mettre cette double pratique, technique et outils, au service de grands projets, en Afrique de l'Ouest notamment."
-    ],
-    "en": [
-      "I am a state-certified civil engineer from the École Mohammadia d'Ingénieurs (EMI, Rabat), specialised in Buildings, Bridges and Roads, based in Casablanca. For two years at JESA, on OCP Group industrial projects, I covered the full project cycle: design and calculation, production and follow-up of deliverables, tender preparation, technical bid evaluation and support to construction teams.",
-      "I am now a design engineer at Cap Ingénierie International, on the Medina Royal Mansour project in Marrakech, where I am responsible for two residential blocks, from seismic analysis through to execution drawings.",
-      "What sets me apart: I do not just produce deliverables. I study how the team works and build the tools (Dynamo, Python, VBA, Revit and Robot APIs) that automate calculation, reduce review comments from the control office and standardise methods.",
-      "My goal: to put this dual practice, engineering and tooling, at the service of major projects, in West Africa in particular."
-    ]
-  },
   "timeline": [
     {
-      "when": {
-        "fr": "2019 - 2021",
-        "en": "2019 - 2021"
-      },
-      "what": {
-        "fr": "Classes préparatoires scientifiques (MP)",
-        "en": "Preparatory classes (MP)"
-      },
-      "where": {
-        "fr": "Lycée Réda Slaoui, Agadir",
-        "en": "Lycée Réda Slaoui, Agadir"
-      }
+      "when": { "fr": "Depuis sept. 2026", "en": "Since Sept. 2026" },
+      "role": { "fr": "Ingénieur Structure & Développement d'Outils", "en": "Structural Engineer & Tools Developer" },
+      "org": "Cap Ingénierie International",
+      "line": { "fr": "Medina Royal Mansour extension, Marrakech : analyse sismique RPS 2011, plans d'exécution, outils API Robot.", "en": "Medina Royal Mansour extension, Marrakech: RPS 2011 seismic analysis, execution drawings, Robot API tools." }
     },
     {
-      "when": {
-        "fr": "2021 - 2024",
-        "en": "2021 - 2024"
-      },
-      "what": {
-        "fr": "Ingénieur d'État en Génie Civil",
-        "en": "State Engineering Degree in Civil Engineering"
-      },
-      "where": {
-        "fr": "École Mohammadia d'Ingénieurs, Rabat · stages BET Planète Études, TGCC, ADM · PFE chez JESA",
-        "en": "École Mohammadia d'Ingénieurs, Rabat · internships at BET Planète Études, TGCC, ADM · final project at JESA"
-      }
+      "when": { "fr": "Août 2024 - Juil. 2026", "en": "Aug 2024 - Jul 2026" },
+      "role": { "fr": "Civil & Structural Engineer", "en": "Civil & Structural Engineer" },
+      "org": "JESA S.A. (OCP / Worley)",
+      "line": { "fr": "Projets miniers et chimiques OCP : charpentes, fondations d'équipements, ITB / TBE, revue VDR.", "en": "OCP mining and chemical projects: steel structures, equipment foundations, ITB / TBE, VDR review." }
     },
     {
-      "when": {
-        "fr": "Août 2024 - Juillet 2026",
-        "en": "Aug 2024 - Jul 2026"
-      },
-      "what": {
-        "fr": "Civil & Structural Engineer, JESA",
-        "en": "Civil & Structural Engineer, JESA"
-      },
-      "where": {
-        "fr": "Casablanca · grands projets industriels du Groupe OCP",
-        "en": "Casablanca · major OCP Group industrial projects"
-      }
+      "when": "2022 - 2023",
+      "role": { "fr": "Stages d'ingénieur", "en": "Engineering internships" },
+      "org": "Planète Études · TGCC · ADM · BET MEP",
+      "line": { "fr": "Dôme métallique de stade, R+4, chantier Al Jinane, inspection d'ouvrage d'art, route RP420.", "en": "Stadium steel dome, G+4 building, Al Jinane site, bridge inspection, RP420 road." }
     },
     {
-      "when": {
-        "fr": "Depuis septembre 2026",
-        "en": "Since September 2026"
-      },
-      "what": {
-        "fr": "Ingénieur Chargé d'Études, Cap Ingénierie International",
-        "en": "Design Engineer, Cap Ingénierie International"
-      },
-      "where": {
-        "fr": "Médina Royal Mansour, Marrakech",
-        "en": "Medina Royal Mansour, Marrakech"
-      }
+      "when": "2019 - 2024",
+      "role": { "fr": "Ingénieur d'État en Génie Civil", "en": "State Engineering Degree, Civil Engineering" },
+      "org": { "fr": "EMI Rabat · Classes préparatoires MP, Agadir", "en": "EMI Rabat · MP preparatory classes, Agadir" },
+      "line": { "fr": "Charpente métallique, béton armé, géotechnique, routes et VRD.", "en": "Steel structures, reinforced concrete, geotechnics, roads and utilities." }
     }
   ],
-  "hero": {
-    "chips": [
-      {
-        "title": {
-          "fr": "Industriel",
-          "en": "Industrial"
-        },
-        "sub": {
-          "fr": "OCP · JESA",
-          "en": "OCP · JESA"
-        }
-      },
-      {
-        "title": {
-          "fr": "Bâtiments",
-          "en": "Buildings"
-        },
-        "sub": {
-          "fr": "Médina Royal Mansour · Cap Ingénierie",
-          "en": "Medina Royal Mansour · Cap Ingénierie"
-        }
-      },
-      {
-        "title": {
-          "fr": "BIM & Automatisation",
-          "en": "BIM & Automation"
-        },
-        "sub": {
-          "fr": "Revit · Dynamo · API Robot · Python",
-          "en": "Revit · Dynamo · Robot API · Python"
-        }
-      }
-    ],
-    "band": [
-      {
-        "icon": "calc",
-        "title": {
-          "fr": "Calculs & structures",
-          "en": "Design & structures"
-        },
-        "sub": {
-          "fr": "Béton armé, charpente métallique",
-          "en": "Reinforced concrete, steel"
-        }
-      },
-      {
-        "icon": "doc",
-        "title": {
-          "fr": "Plans & appels d'offres",
-          "en": "Drawings & tenders"
-        },
-        "sub": {
-          "fr": "Notes de calcul, BOQ, TBE",
-          "en": "Calculation notes, BOQ, TBE"
-        }
-      },
-      {
-        "icon": "cube",
-        "title": {
-          "fr": "BIM & maquette numérique",
-          "en": "BIM & digital model"
-        },
-        "sub": {
-          "fr": "Revit, Navisworks",
-          "en": "Revit, Navisworks"
-        }
-      },
-      {
-        "icon": "code",
-        "title": {
-          "fr": "Automatisation",
-          "en": "Automation"
-        },
-        "sub": {
-          "fr": "Dynamo, VBA, API Revit et Robot",
-          "en": "Dynamo, VBA, Revit and Robot APIs"
-        }
-      },
-      {
-        "icon": "people",
-        "title": {
-          "fr": "Chantier & coordination",
-          "en": "Site & coordination"
-        },
-        "sub": {
-          "fr": "Interfaces multi-disciplines",
-          "en": "Multi-discipline interfaces"
-        }
-      }
-    ],
-    "signature": {
-      "fr": [
-        "Des idées aux structures.",
-        "Des outils aux résultats."
-      ],
-      "en": [
-        "From ideas to structures.",
-        "From tools to results."
-      ]
-    }
-  }
+  "skills": [
+    { "title": { "fr": "Structures", "en": "Structures" }, "items": ["Charpente métallique", "Béton armé", "Fondations d'équipements", "Assemblages", "Ingénierie de détail · IFC"] },
+    { "title": { "fr": "Programmation & BIM", "en": "Programming & BIM" }, "items": ["API Robot", "Revit API", "Python", "VBA", "Dynamo", "Navisworks"] },
+    { "title": { "fr": "Logiciels", "en": "Software" }, "items": ["Robot Structural Analysis", "AutoCAD", "Revit", "IDEA StatiCa", "Excel"] },
+    { "title": { "fr": "Normes", "en": "Codes" }, "items": ["EC2", "EC3", "EC7", "RPS 2011", "BAEL 91", "CM66", "NV65", "ACI", "ASCE 7"] },
+    { "title": { "fr": "Projet & chantier", "en": "Project & site" }, "items": ["ITB / BOQ", "TBE", "VDR", "MS Project", "Primavera P6", "Assistance chantier"] },
+    { "title": { "fr": "Langues", "en": "Languages" }, "items": ["Français : courant", "Anglais : B2/C1"] }
+  ],
+  "certifications": [
+    { "title": "Construction Project Management", "meta": { "fr": "Columbia University, Coursera · en cours", "en": "Columbia University, Coursera · in progress" } },
+    { "title": { "fr": "Les fondements de la gestion de projet", "en": "Project Management Foundations" }, "meta": { "fr": "LinkedIn Learning, agréé PMI · 2026", "en": "LinkedIn Learning, PMI-approved · 2026" } },
+    { "title": "FEM, Linear & Nonlinear Analysis", "meta": "Coursera · 2023" },
+    { "title": "BIM Application for Engineers", "meta": "National Taiwan University, Coursera · 2023" }
+  ]
 };

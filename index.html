@@ -4,35 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kaba Eng. Portfolio</title>
-  <meta name="description" content="Portfolio de Mohamed Said Kaba, ingénieur d'État en génie civil (EMI Rabat) : structures béton armé et métalliques, appels d'offres, et outils numériques développés en interne (Dynamo, Python, VBA, API Revit et Robot).">
-  <meta property="og:title" content="Mohamed Said Kaba : Ingénieur Génie Civil & Structures · BIM">
-  <meta property="og:description" content="Ingénierie de structures et outils numériques faits maison. Portfolio, projets et applications.">
+  <meta name="description" content="Mohamed Said Kaba, ingénieur d'État EMI : structures industrielles et bâtiments, et outils d'ingénierie développés sur l'API Robot, Revit, Dynamo, Python et VBA.">
+  <meta property="og:title" content="Mohamed Said Kaba : Ingénieur Structures & Outils d'ingénierie">
+  <meta property="og:description" content="Structures métalliques et béton armé, et les outils qui automatisent leur calcul.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/photo.jpg">
-  <meta name="theme-color" content="#0b1f3a">
+  <meta property="og:image" content="assets/img/work/tank-dynamo-3d.webp">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230b1f3a%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Georgia,serif%27 font-size=%2730%27 font-weight=%27700%27 letter-spacing=%271%27 text-anchor=%27middle%27 fill=%27%23d3b47a%27%3ESK%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231f3864%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial,sans-serif%27 font-size=%2728%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23ffffff%27%3ESK%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="topbar" id="top">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#accueil" aria-label="Mohamed Said Kaba">M<span>.</span>S<span>.</span>K</a>
+      <a class="brand" href="#accueil"><span class="brand-mark">SK</span><span class="brand-name">Mohamed Said <b>Kaba</b></span></a>
       <nav class="nav" id="nav" aria-label="Navigation principale"></nav>
-      <span class="place" id="place"></span>
       <div class="lang" role="group" aria-label="Langue / Language">
         <button type="button" data-lang="fr">FR</button>
         <button type="button" data-lang="en">EN</button>
       </div>
-      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main id="app">
     <noscript><p class="wrap" style="padding:4rem 0">Ce site nécessite JavaScript. / This site requires JavaScript.</p></noscript>
   </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true"></div>
 
   <footer class="footer">
     <div class="wrap footer-inner">
@@ -43,10 +44,8 @@
 
   <script src="content/site.js"></script>
   <script src="content/profile.js"></script>
-  <script src="content/projects.js"></script>
+  <script src="content/works.js"></script>
   <script src="content/tools.js"></script>
-  <script src="content/skills.js"></script>
-  <script src="content/education.js"></script>
   <script src="content/videos.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
