@@ -162,67 +162,158 @@ window.SITE.works = {
     {
       "id": "takeoffs",
       "cat": "tool",
+      "featured": true,
       "org": "JESA",
       "period": "2024",
       "title": {
-        "fr": "JESA Takeoffs : métrés depuis Revit",
-        "en": "JESA Takeoffs: quantities from Revit"
+        "fr": "JESA Takeoffs : métrés automatisés depuis Revit",
+        "en": "JESA Takeoffs: automated quantities from Revit"
       },
       "summary": {
-        "fr": "Plug-in Revit qui extrait les quantités de la maquette pour le chiffrage. Né de mon PFE, toujours utilisé par JESA.",
-        "en": "Revit plug-in extracting model quantities for cost estimation. Born from my final-year project, still used by JESA."
+        "fr": "Extension Revit qui lit la maquette et sort les métrés directement en Excel. Projet de fin d'études, passé en production chez JESA.",
+        "en": "Revit add-in that reads the model and exports quantities straight to Excel. Final-year project, now in production at JESA."
       },
       "points": {
         "fr": [
-          "Extraction automatique des métrés par la Revit API.",
-          "Contribution à J-Bid, la plateforme JESA d'analyse des appels d'offres."
+          "Extension pyRevit développée en Python sur la Revit API : un ruban d'outils dédiés au métré.",
+          "Quantification des dalles, voiles, semelles filantes, canalisations et zones d'étanchéité, par style et par niveau.",
+          "Découpage des dalles en zones réelles : la surface extraite est la surface exacte, pas celle de la dalle entiere.",
+          "Traçabilité : chaque quantité reste liée à l'ID de l'objet Revit, sans altérer la maquette.",
+          "Export Excel direct, utilisé pour le chiffrage et la plateforme d'appels d'offres J-Bid."
         ],
         "en": [
-          "Automatic quantity take-off through the Revit API.",
-          "Contribution to J-Bid, JESA's tender analysis platform."
+          "pyRevit add-in written in Python on the Revit API: a ribbon of take-off tools.",
+          "Quantities for slabs, walls, strip footings, pipes and waterproofing zones, by line style and by level.",
+          "Slabs split into real zones: the extracted area is the exact area, not the whole slab.",
+          "Traceability: every quantity stays linked to its Revit element ID, without altering the model.",
+          "Direct Excel export, used for cost estimation and the J-Bid tender platform."
         ]
       },
       "tags": [
         "Revit API",
         "Python",
+        "pyRevit",
         "BIM 5D"
       ],
-      "images": []
+      "images": [
+        {
+          "src": "assets/img/work/takeoffs-plugin.webp",
+          "caption": {
+            "fr": "Le plug-in renvoie les longueurs totales par style d'objet",
+            "en": "The plug-in returns total lengths by object style"
+          }
+        },
+        {
+          "src": "assets/img/work/takeoffs-ruban.webp",
+          "caption": {
+            "fr": "Le ruban d'outils ajoute dans Revit",
+            "en": "The tool ribbon added inside Revit"
+          }
+        },
+        {
+          "src": "assets/img/work/takeoffs-nomenclature.webp",
+          "caption": {
+            "fr": "Nomenclature des planchers générée par zone",
+            "en": "Slab schedule generated zone by zone"
+          }
+        },
+        {
+          "src": "assets/img/work/takeoffs-modele.webp",
+          "caption": {
+            "fr": "Semelles filantes et canalisations quantifiées sur la maquette",
+            "en": "Strip footings and pipes quantified on the model"
+          }
+        },
+        {
+          "src": "assets/img/work/takeoffs-etancheite.webp",
+          "caption": {
+            "fr": "Métré des étanchéités de terrasse par zone",
+            "en": "Roof waterproofing take-off, zone by zone"
+          }
+        },
+        {
+          "src": "assets/img/work/takeoffs-excel.webp",
+          "caption": {
+            "fr": "Résultat exporté en Excel, prêt pour le chiffrage",
+            "en": "Result exported to Excel, ready for pricing"
+          }
+        }
+      ]
     },
     {
       "id": "dome",
       "cat": "study",
       "featured": true,
-      "org": "BET Planète Études",
+      "org": "BET Planete Etudes",
       "period": "2022 - 2023",
       "title": {
-        "fr": "Dôme métallique de stade 70 x 50 m",
-        "en": "70 x 50 m stadium steel dome"
+        "fr": "Couverture métallique d'une salle omnisports",
+        "en": "Steel roof of a multi-sports hall"
       },
       "summary": {
-        "fr": "Couverture en treillis spatial modélisée et calculée sous Robot, selon les Eurocodes.",
-        "en": "Space-truss roof modelled and calculated in Robot to Eurocodes."
+        "fr": "Charpente en treillis de 70 x 50 m modélisée et calculée sous Robot, de la descente de charges à la vérification EC3.",
+        "en": "70 x 50 m truss roof modelled and calculated in Robot, from load take-down to EC3 checks."
       },
       "points": {
         "fr": [
-          "Modélisation complète de la charpente et des appuis.",
+          "Modélisation complète de la charpente, des arcs, des pannes et des appuis.",
+          "Charges de vent établies selon l'EC1 et comparées aux règles NV65, puis appliquées par zones.",
+          "Vérification des barres à l'EC3 : flambement, déversement, stabilité, choix des sections tubulaires.",
           "Également : immeuble R+4 en béton armé à Témara."
         ],
         "en": [
-          "Full model of the roof structure and supports.",
-          "Also: G+4 RC building in Témara."
+          "Full model of the roof structure, arches, purlins and supports.",
+          "Wind loads derived to EC1, compared with the NV65 rules, then applied zone by zone.",
+          "EC3 member checks: buckling, lateral-torsional buckling, stability, tubular section sizing.",
+          "Also: G+4 RC building in Temara."
         ]
       },
       "tags": [
         "EC3",
+        "EC1 Vent",
         "Robot",
         "Treillis spatial"
       ],
       "images": [
         {
+          "src": "assets/img/work/dome-robot-3d.webp",
+          "caption": {
+            "fr": "La charpente complète modélisée sous Robot",
+            "en": "The complete roof structure modelled in Robot"
+          }
+        },
+        {
+          "src": "assets/img/work/dome-vent.webp",
+          "caption": {
+            "fr": "Charges de vent appliquées sur la couverture",
+            "en": "Wind loads applied to the roof"
+          }
+        },
+        {
+          "src": "assets/img/work/dome-ec3.webp",
+          "caption": {
+            "fr": "Vérification d'une barre selon NF EN 1993",
+            "en": "Member check to NF EN 1993"
+          }
+        },
+        {
+          "src": "assets/img/work/dome-sections.webp",
+          "caption": {
+            "fr": "Sections retenues par type de barre",
+            "en": "Final sections by member type"
+          }
+        },
+        {
+          "src": "assets/img/work/dome-plan.webp",
+          "caption": {
+            "fr": "Plan d'implantation de la salle",
+            "en": "Hall layout drawing"
+          }
+        },
+        {
           "src": "assets/img/work/dome-1.webp",
           "caption": {
-            "fr": "Vue d'ensemble du modèle",
+            "fr": "Vue d'ensemble du modele",
             "en": "Overall model view"
           }
         },
@@ -234,16 +325,9 @@ window.SITE.works = {
           }
         },
         {
-          "src": "assets/img/work/dome-3.webp",
-          "caption": {
-            "fr": "Contreventement de toiture",
-            "en": "Roof bracing"
-          }
-        },
-        {
           "src": "assets/img/work/dome-4.webp",
           "caption": {
-            "fr": "Détail des treillis",
+            "fr": "Detail des treillis",
             "en": "Truss detail"
           }
         }
@@ -363,22 +447,114 @@ window.SITE.works = {
       "images": []
     },
     {
-      "id": "stages",
+      "id": "tgcc",
       "cat": "study",
-      "org": "TGCC · ADM · BET MEP",
-      "period": "2022 - 2023",
+      "featured": true,
+      "org": "TGCC",
+      "period": "2023",
       "title": {
-        "fr": "Chantier, ouvrages d'art et routes",
-        "en": "Site, bridges and roads"
+        "fr": "Al Jinane, Rabat : chantier et maquette",
+        "en": "Al Jinane, Rabat: site and BIM model"
       },
       "summary": {
-        "fr": "Suivi du chantier Al Jinane (hôtel, centre commercial), inspection du pont sur l'oued Ykem, étude de la route RP420.",
-        "en": "Al Jinane site follow-up (hotel, mall), oued Ykem bridge inspection, RP420 road study."
+        "fr": "Hôtel et centre commercial, trois sous-sols. Suivi des travaux sur site et modélisation de la structure sous Revit.",
+        "en": "Hotel and shopping mall, three basement levels. Site follow-up and Revit structural modelling."
+      },
+      "points": {
+        "fr": [
+          "Suivi des terrassements, des pieux, des voiles de soutènement et des fondations.",
+          "Contrôle du ferraillage et du coffrage avant bétonnage, implantation et relevés topographiques.",
+          "Maquette Revit de la structure : radiers, semelles, poteaux, voiles, planchers, escaliers mécaniques.",
+          "Métrés extraits de la maquette par nomenclatures : récapitulatif des volumes de béton par ouvrage.",
+          "Lecture des plans de coffrage, de ferraillage et des plans de sécurité incendie."
+        ],
+        "en": [
+          "Follow-up of earthworks, piles, retaining walls and foundations.",
+          "Reinforcement and formwork checks before pouring, setting out and survey work.",
+          "Revit structural model: rafts, footings, columns, walls, slabs, escalators.",
+          "Quantities extracted from the model through schedules: concrete volumes per structural item.",
+          "Reading formwork, reinforcement and fire-safety drawings."
+        ]
       },
       "tags": [
         "Chantier",
         "BIM",
+        "Revit",
+        "Metres"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/tgcc-maquette.webp",
+          "caption": {
+            "fr": "La maquette Revit de la structure",
+            "en": "The Revit structural model"
+          }
+        },
+        {
+          "src": "assets/img/work/tgcc-ferraillage.webp",
+          "caption": {
+            "fr": "Ferraillage des voiles avant bétonnage",
+            "en": "Wall reinforcement before pouring"
+          }
+        },
+        {
+          "src": "assets/img/work/tgcc-volumes.webp",
+          "caption": {
+            "fr": "Récapitulatif des volumes de béton tiré de la maquette",
+            "en": "Concrete volumes summary, taken from the model"
+          }
+        },
+        {
+          "src": "assets/img/work/tgcc-topographie.webp",
+          "caption": {
+            "fr": "Relevé topographique sur le chantier",
+            "en": "Survey work on site"
+          }
+        },
+        {
+          "src": "assets/img/work/tgcc-plan.webp",
+          "caption": {
+            "fr": "Plan d'exécution du projet",
+            "en": "Project execution drawing"
+          }
+        },
+        {
+          "src": "assets/img/work/tgcc-aljinane.webp",
+          "caption": {
+            "fr": "Le projet Al Jinane",
+            "en": "The Al Jinane project"
+          }
+        }
+      ]
+    },
+    {
+      "id": "adm",
+      "cat": "study",
+      "org": "ADM \u00b7 BET MEP",
+      "period": "2022",
+      "title": {
+        "fr": "Ouvrages d'art et routes",
+        "en": "Bridges and roads"
+      },
+      "summary": {
+        "fr": "Inspection structurelle du pont sur l'oued Ykem pour Autoroutes du Maroc, et étude de la route RP420.",
+        "en": "Structural inspection of the oued Ykem bridge for Autoroutes du Maroc, and RP420 road study."
+      },
+      "points": {
+        "fr": [
+          "Diagnostic d'ouvrage : relev\u00e9 des desordres, appuis, joints, état des poutres.",
+          "Étude routière : tracé, profils et assainissement de la RP420.",
+          "Également : études de fluides en bureau MEP à Kénitra."
+        ],
+        "en": [
+          "Bridge diagnosis: survey of defects, bearings, joints, beam condition.",
+          "Road study: alignment, profiles and drainage of the RP420.",
+          "Also: MEP design office work in Kenitra."
+        ]
+      },
+      "tags": [
         "Ouvrages d'art",
+        "Diagnostic",
         "VRD"
       ],
       "images": []

@@ -42,9 +42,13 @@ window.SITE.profile = {
     { "title": { "fr": "Langues", "en": "Languages" }, "items": ["Français : courant", "Anglais : B2/C1"] }
   ],
   "certifications": [
-    { "title": "Construction Project Management", "meta": { "fr": "Columbia University, Coursera · en cours", "en": "Columbia University, Coursera · in progress" } },
-    { "title": { "fr": "Les fondements de la gestion de projet", "en": "Project Management Foundations" }, "meta": { "fr": "LinkedIn Learning, agréé PMI · 2026", "en": "LinkedIn Learning, PMI-approved · 2026" } },
-    { "title": "FEM, Linear & Nonlinear Analysis", "meta": "Coursera · 2023" },
-    { "title": "BIM Application for Engineers", "meta": "National Taiwan University, Coursera · 2023" }
+    { "title": "Construction Project Management", "meta": { "fr": "Columbia University, Coursera \u00b7 en cours", "en": "Columbia University, Coursera \u00b7 in progress" } },
+    { "title": { "fr": "Les fondements de la gestion de projet", "en": "Project Management Foundations" }, "meta": { "fr": "LinkedIn Learning, agr\u00e9\u00e9 PMI \u00b7 2026", "en": "LinkedIn Learning, PMI-approved \u00b7 2026" } },
+    { "title": "FEM, Linear & Nonlinear Analysis", "meta": "Coursera \u00b7 2023" },
+    { "title": "BIM Application for Engineers", "meta": "National Taiwan University, Coursera \u00b7 2023" },
+    { "title": { "fr": "Formations techniques JESA : 17 modules", "en": "JESA technical training: 17 modules" }, "meta": { "fr": "Charges de vent et de s\u00e9isme ASCE 7, calcul dynamique des fondations d\u0027\u00e9quipements, EC8, pipe racks, sp\u00e9cifications b\u00e9ton, protection anticorrosion \u00b7 2025", "en": "ASCE 7 wind and seismic loads, dynamic analysis of equipment foundations, EC8, pipe racks, concrete specifications, corrosion protection \u00b7 2025" } },
+    { "title": { "fr": "Dynamo et Revit API pour l\u0027ing\u00e9nierie", "en": "Dynamo and Revit API for engineering" }, "meta": { "fr": "Dynamo de z\u00e9ro, Revit vers Robot Structural Analysis, Generative Design \u00b7 Udemy et LinkedIn Learning", "en": "Dynamo from scratch, Revit to Robot Structural Analysis, Generative Design \u00b7 Udemy and LinkedIn Learning" } },
+    { "title": { "fr": "Revit : mise en place du processus BIM interne", "en": "Revit: setting up an internal BIM process" }, "meta": "LinkedIn Learning \u00b7 2023" },
+    { "title": { "fr": "L\u0027intelligence artificielle pour les leaders et les managers", "en": "Artificial intelligence for leaders and managers" }, "meta": "LinkedIn Learning" }
   ]
 };
