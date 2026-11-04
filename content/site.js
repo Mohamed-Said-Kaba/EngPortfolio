@@ -56,7 +56,7 @@ window.SITE.site = {
     "close": { "fr": "Fermer", "en": "Close" },
     "soon": { "fr": "Visuel à venir", "en": "Visual coming soon" },
     "photos": { "fr": "images", "en": "images" },
-    "footer": { "fr": "Ing. Kaba : Civil Engineering Dev", "en": "Ing. Kaba: Civil Engineering Dev" },
+    "footer": { "fr": "Ing. Kaba : Civil Engineering & Dev BIM", "en": "Ing. Kaba: Civil Engineering & Dev BIM" },
     "top": { "fr": "Haut de page", "en": "Back to top" }
   }
 };
