@@ -396,11 +396,13 @@ window.SITE.works = {
       "points": {
         "fr": [
           "Charpentes et béton armé : convoyeurs, pipe racks, plateformes, bâtiments process.",
+          "Génie civil du corridor SP2M : pipe bridges, sleepers de pipeline, fosses de relevage (sump pits).",
           "Fondations de réservoirs, filtres-presses et équipements sous charges dynamiques.",
           "Plans d'exécution et IFC, dossiers ITB, analyse technique des offres, revue VDR."
         ],
         "en": [
           "Steel and RC structures: conveyors, pipe racks, platforms, process buildings.",
+          "Civil works on the SP2M corridor: pipe bridges, pipeline sleepers, sump pits.",
           "Foundations for tanks, filter presses and dynamically loaded equipment.",
           "Execution and IFC drawings, ITB packages, technical bid evaluation, VDR review."
         ]

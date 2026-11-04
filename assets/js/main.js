@@ -29,7 +29,13 @@
     beam: '<path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6"/>',
     truss: '<path d="M2 18h20M2 18 7 8l5 10 5-10 5 10M7 8h10"/>',
     cpu: '<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
-    download: '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>'
+    download: '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>',
+    bridge: '<path d="M2 9h20M2 9v10M22 9v10M7 9v10M17 9v10M2 9c3 4 7 4 10 0 3 4 7 4 10 0"/>',
+    road: '<path d="M8 3 4 21M16 3l4 18M12 4v3M12 11v3M12 18v2"/>',
+    water: '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9 15a3 3 0 0 0 3 3"/>',
+    soil: '<path d="M2 8h20M2 13h20M2 18h20M6 8v5M14 13v5M18 8v5M10 18v3"/>',
+    building: '<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"/>',
+    chart: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'
   };
   function icon(name) {
     var s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -83,7 +89,7 @@
     ]);
     var portrait = el('div', { class: 'portrait' }, [
       el('div', { class: 'ring' }, [el('img', { src: S.photo, alt: S.firstName + ' ' + S.lastName, width: 330, height: 330 })]),
-      el('div', { class: 'float f1' }, [icon('truss'), el('div', null, [el('b', { text: 'Robot · EC3 · RPS' }), lang === 'fr' ? 'Calcul de structures' : 'Structural design'])]),
+      el('div', { class: 'float f1' }, [icon('truss'), el('div', null, [el('b', { text: lang === 'fr' ? 'Bâtiments · Ponts · Routes' : 'Buildings · Bridges · Roads' }), lang === 'fr' ? 'Génie civil' : 'Civil engineering'])]),
       el('div', { class: 'float f2' }, [icon('code'), el('div', null, [el('b', { text: 'API · Python · VBA' }), lang === 'fr' ? 'Outils maison' : 'In-house tools'])])
     ]);
     var kpis = el('div', { class: 'kpis' }, P.kpis.map(function (k) {
@@ -229,9 +235,27 @@
   /* ---------- Parcours ---------- */
   function renderCareer() {
     var P = D.profile, U = D.site.ui;
-    return section('parcours', 'alt', [head(t(U.h_career)), el('ol', { class: 'timeline' }, P.timeline.map(function (x) {
+    var kids = [head(t(U.h_career)), el('ol', { class: 'timeline' }, P.timeline.map(function (x) {
       return el('li', null, [el('div', { class: 'when', text: t(x.when) }), el('div', { class: 'role', text: t(x.role) }), el('div', { class: 'org', text: t(x.org) }), el('div', { class: 'line', text: t(x.line) })]);
-    }))]);
+    }))];
+    var E = P.education;
+    if (E) {
+      var top = el('div', { class: 'edu-head' }, [
+        el('div', null, [el('h3', { class: 'sub', text: t(U.h_edu) }), el('p', { class: 'lead', text: t(U.lead_edu) })])
+      ]);
+      if (E.photo) {
+        var ph = el('img', { class: 'edu-photo', src: E.photo, alt: 'EMI Rabat', loading: 'lazy' });
+        ph.addEventListener('error', function () { ph.remove(); });
+        top.appendChild(ph);
+      }
+      kids.push(top);
+      kids.push(el('div', { class: 'edu' }, E.domains.map(function (d) {
+        return el('div', { class: 'edu-card' }, [el('div', { class: 'edu-t' }, [icon(d.icon), el('h4', { text: t(d.title) })]),
+          el('ul', null, list(d.items).map(function (x) { return el('li', { text: x }); }))]);
+      })));
+      if (E.projects) kids.push(el('div', { class: 'edu-proj' }, [el('b', { text: t(U.edu_projects) + ' :' }), tags(list(E.projects))]));
+    }
+    return section('parcours', 'alt', kids);
   }
 
   /* ---------- Compétences ---------- */
@@ -239,9 +263,9 @@
     var P = D.profile, U = D.site.ui;
     return section('competences', '', [
       head(t(U.h_skills)),
-      el('div', { class: 'skills' }, P.skills.map(function (g) { return el('div', { class: 'skill' }, [el('h3', { text: t(g.title) }), tags(g.items)]); })),
+      el('div', { class: 'skills' }, P.skills.map(function (g) { return el('div', { class: 'skill' + (g.wide ? ' wide' : '') }, [el('h3', { text: t(g.title) }), tags(list(g.items))]); })),
       el('h3', { class: 'sub', text: t(U.h_certs) }),
-      el('div', { class: 'certs' }, P.certifications.map(function (c) { return el('div', { class: 'cert' }, [icon('award'), el('div', null, [el('b', { text: t(c.title) }), el('span', { text: t(c.meta) })])]); }))
+      el('ul', { class: 'certs' }, P.certifications.map(function (c) { return el('li', { class: 'cert' }, [icon('award'), el('div', null, [el('b', { text: t(c.title) }), el('span', { text: t(c.meta) })])]); }))
     ]);
   }
 
@@ -319,7 +343,7 @@
     document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
     document.getElementById('footer-text').textContent = '© ' + new Date().getFullYear() + ' ' + S.firstName + ' ' + S.lastName + ' · ' + t(S.ui.footer);
     document.getElementById('footer-top').textContent = t(S.ui.top) + ' ↑';
-    reveal(document.querySelectorAll('.kpi, .step, .principles div, .timeline li, .skill, .cert, .contact-card'));
+    reveal(document.querySelectorAll('.kpi, .step, .principles div, .timeline li, .edu-card, .skill, .cert, .contact-card'));
     countUp(); observeNav(); checkCv();
   }
   function setLang(l) { lang = l; try { localStorage.setItem('lang', l); } catch (e) {} render(); }

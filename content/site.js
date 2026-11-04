@@ -5,14 +5,14 @@ window.SITE.site = {
   "lastName": "Kaba",
   "photo": "assets/img/portrait.jpg",
   "title": {
-    "fr": "Ingénieur Structures & Développement d'Outils d'Ingénierie",
-    "en": "Structural Engineer & Engineering Tools Developer"
+    "fr": "Ingénieur Génie Civil : structures, infrastructures et outils d'ingénierie",
+    "en": "Civil Engineer: structures, infrastructure and engineering tools"
   },
   "tagline": {
-    "fr": "Je calcule des structures industrielles et des bâtiments, et je construis les outils qui automatisent ce calcul.",
-    "en": "I design industrial structures and buildings, and I build the tools that automate that work."
+    "fr": "Formé à tout le génie civil, j'ai travaillé sur des bâtiments, des ouvrages industriels, des ponts et des routes. Et je développe les outils qui automatisent le calcul.",
+    "en": "Trained across all of civil engineering, I have worked on buildings, industrial structures, bridges and roads. And I build the tools that automate the calculations."
   },
-  "badges": ["Lauréat EMI", "JESA (OCP / Worley)", "Cap Ingénierie International"],
+  "badges": ["Lauréat EMI · BPC", "JESA (OCP / Worley)", "Cap Ingénierie International"],
   "location": { "fr": "Casablanca, Maroc · Mobile Maroc et Afrique de l'Ouest", "en": "Casablanca, Morocco · Mobile across Morocco and West Africa" },
   "contact": {
     "email": "saidkaba229mohamed@gmail.com",
@@ -45,15 +45,18 @@ window.SITE.site = {
     "h_career": { "fr": "Parcours", "en": "Career" },
     "h_skills": { "fr": "Compétences", "en": "Skills" },
     "h_certs": { "fr": "Certifications", "en": "Certifications" },
+    "h_edu": { "fr": "Formation EMI : tout le génie civil", "en": "EMI training: the whole of civil engineering" },
+    "lead_edu": { "fr": "Trois ans à l'École Mohammadia d'Ingénieurs, option Bâtiments, Ponts et Chaussées, après deux ans de classes préparatoires MP. Les modules suivis, par domaine :", "en": "Three years at École Mohammadia d'Ingénieurs, Buildings, Bridges and Roads option, after two years of MP preparatory classes. Modules taken, by field:" },
+    "edu_projects": { "fr": "Projets réalisés à l'école", "en": "School projects" },
     "h_contact": { "fr": "Travaillons ensemble", "en": "Let's work together" },
-    "lead_contact": { "fr": "Un projet de structure, un appel d'offres ou un calcul à automatiser : écrivez-moi.", "en": "A structural project, a tender or a calculation to automate: get in touch." },
+    "lead_contact": { "fr": "Un bâtiment, une infrastructure, un appel d'offres ou un calcul à automatiser : écrivez-moi.", "en": "A building, an infrastructure project, a tender or a calculation to automate: get in touch." },
     "phone": { "fr": "Téléphone", "en": "Phone" },
     "writeMe": { "fr": "M'écrire", "en": "Email me" },
     "mailSubject": { "fr": "Prise de contact via votre portfolio", "en": "Contact via your portfolio" },
     "close": { "fr": "Fermer", "en": "Close" },
     "soon": { "fr": "Visuel à venir", "en": "Visual coming soon" },
     "photos": { "fr": "images", "en": "images" },
-    "footer": { "fr": "Ingénieur Structures & Outils d'ingénierie", "en": "Structural Engineer & Engineering Tools" },
+    "footer": { "fr": "Ing. Kaba : Civil Engineering Dev", "en": "Ing. Kaba: Civil Engineering Dev" },
     "top": { "fr": "Haut de page", "en": "Back to top" }
   }
 };
